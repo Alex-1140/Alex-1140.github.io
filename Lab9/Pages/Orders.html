@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Рэми</title>
+        <meta name="description" content="Заказ еды в офис и на дом по Москве. Закажите доставку онлайн или ☎ +7 (978) 261-81-95.">
+        <meta name="keywords" content="Доставка Еда Быстро Дешево ">
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Styles/Orders.css">
+    </head>
+    <body>
+       <header>
+        
+
+            <h1>Реми</h1>
+            <nav class="navigation">
+                <a href="main.html">О нас</a>
+                <a href="Pack_lunch.html">Собрать заказ</a>
+                <a href="Form_order.html">Оформить заказы</a>
+                <a href="Orders.html">Заказы</a>
+                <a href="#Контакты">Контакты</a>
+                <button id="loginBtn">Войти</button>
+            </nav>
+       </header>
+       <main>
+        <h2>Заказы</h2>
+        <section id="orders">
+            <div id="table">
+                <p>№</p>
+                <p>Дата оформления</p>
+                <p>Состав заказа</p>
+                <p>Стоимость</p>
+                <p>Время доставки</p>
+                <p>Действия</p>
+            </div>
+
+
+
+            
+        </section>
+
+        
+        </main>
+
+<script src="../Scripts/config.js"></script>
+<script src="../Scripts/Orders/Orders.js"></script>
+
+        <footer id="Контакты">
+            <p id="re">Контактные данные: <a href="tel:+79782618195"> +7 (978) 261-81-95 </a> </p>
+            <button>Обратная связь</button>
+        </footer>
+
+
+        <div id="loginModal" class="modal">
+            <div id="mod">
+                <span class="close">&times;</span>
+                <!-- Форма авторизации из sign in.html -->
+                <form action="https://httpbin.org/post" method="post" id="signin">
+                <h3>Авторизация</h3>
+                <p>
+                    <label for="username">Имя пользователя</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="password">Пароль</label><br>
+                    <input type="password" id="password" name="password"><br>
+                    <input type="checkbox"> Запомнить меня<br>
+                    <input type="submit" value="Вход">
+                </p>
+                </form>
+            </div>
+        </div>
+
+
+
+
+<div id="fb" class="modal">
+            <div id="mod">
+                <span class="close">&times;</span>
+        <form action=https://httpbin.org/post method="post" id="feedback">
+    <h3>Форма обратной связи</h3>
+                <label for="name">ФИО</label> <br>
+                <input type="text" name="name"> <br>
+                
+                <input type="hidden">
+
+                <label for="mail">Адрес электронной почты</label><br>
+                <input type="email" name="mail">  <br>
+
+
+                <label for="found out">Откуда узнали о нас</label> <br>
+                <section class="radio">
+                    <input type="radio" name="found out">От друзей <br>
+                    <input type="radio" name="found out">В интернете<br>
+                </section>
+                
+                <label for="type message">Тип обращения</label><br>
+                <select name="type message">
+                    <option disabled selected hidden> </option>
+                    <option value="complaint">Жалоба</option>
+                    <option value="assumption">Предложение</option>
+                </select> <br>
+
+                <label for="message">Текст обращения</label><br>
+<textarea name="message" rows="5" cols="40"></textarea><br>
+
+                <label for="file">Вложение</lable><br>
+                <input type="file" name="file"><br>
+
+                <input type="checkbox">Даю согласие на обработку персональных данных <br>
+
+
+                <input type="submit" value="Отправить"><br>
+
+        </form>
+</div>
+        </div>
+
+
+
+
+
+<script>
+// Получаем модальное окно
+var modal = document.getElementById("loginModal");
+
+var span = document.getElementsByClassName("close")[0];
+// Получаем кнопку "Войти" по ID
+var btn = document.getElementById("loginBtn");
+
+// Когда пользователь нажимает на кнопку "Войти", открываем модальное окно
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+// Получаем элементы для обратной связи
+var fbModal = document.getElementById("fb");
+var fbClose = fbModal.querySelector(".close");
+var feedbackBtn = document.querySelector("footer button"); // Кнопка в футере
+
+// Когда пользователь нажимает на кнопку "Обратная связь", открываем модальное окно
+feedbackBtn.onclick = function() {
+    fbModal.style.display = "block";
+}
+
+// Когда пользователь нажимает на крестик, закрываем модальное окно
+fbClose.onclick = function() {
+    fbModal.style.display = "none";
+}
+
+</script>
+
+
+        </body>
+
+
+</html>

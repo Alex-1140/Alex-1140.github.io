@@ -1,0 +1,150 @@
+/* print.css */
+/* Стили для печатной версии сайта */
+
+/* Скрываем ненужные элементы */
+nav, 
+button, 
+footer, 
+#loginModal, 
+#fb,
+#Form,
+.add-button,
+.navigation,
+#feedbackk {
+    display: none !important;
+}
+
+/* Базовые настройки */
+* {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+/* Оптимизация изображений */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    filter: grayscale(100%);
+    margin: 10px 0 !important;
+}
+
+/* Улучшаем читаемость текста */
+body {
+    font-size: 12pt;
+    line-height: 1.5;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 10mm !important;
+    font-family: "Times New Roman", serif !important;
+}
+
+/* Оптимизация заголовков */
+h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    font-family: "Times New Roman", serif !important;
+}
+
+h1 {
+    font-size: 18pt !important;
+    margin-bottom: 10pt !important;
+}
+
+h2 {
+    font-size: 16pt !important;
+    margin: 15pt 0 10pt 0 !important;
+}
+
+/* Оптимизация таблиц */
+table {
+    width: 100% !important;
+    border: 1px solid #000 !important;
+    margin: 10pt 0 !important;
+    page-break-inside: avoid;
+}
+
+th, td {
+    border: 1px solid #000 !important;
+    padding: 5pt !important;
+    font-size: 10pt !important;
+}
+
+/* Оптимизация списков */
+ul, ol {
+    margin: 10pt 0 !important;
+}
+
+li {
+    margin: 5pt 0 !important;
+}
+
+/* Убираем лишние отступы */
+.text {
+    width: 100% !important;
+    margin: 10pt 0 !important;
+    font-size: 11pt !important;
+}
+
+/* Ссылки */
+a {
+    text-decoration: underline !important;
+}
+
+/* Добавляем URL после ссылок */
+a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    font-style: italic;
+}
+
+/* Исключаем ненужные ссылки */
+a[href^="javascript:"],
+a[href^="#"] {
+    content: "" !important;
+}
+
+/* Предотвращаем разрыв элементов */
+.dish, 
+section {
+    page-break-inside: avoid;
+}
+
+/* Добавляем информацию о сайте */
+body:after {
+    content: "Напечатано с сайта Реми - " url("/");
+    display: block;
+    text-align: center;
+    font-size: 9pt;
+    margin-top: 20pt;
+    color: #666 !important;
+}
+
+/* Убираем границы у контейнеров блюд */
+.dishes-container {
+    display: block !important;
+}
+
+.dish {
+    width: 100% !important;
+    margin: 15pt 0 !important;
+    padding: 10pt !important;
+    border: 1px solid #ccc !important;
+    filter: none !important;
+}
+
+.dish-content {
+    display: block !important;
+}
+
+.dish-price,
+.dish-name,
+.dish-weight {
+    margin: 5pt 0 !important;
+    font-size: 11pt !important;
+}
+
+/* Скрываем декоративные элементы */
+.dish:hover {
+    border: 1px solid #ccc !important;
+}

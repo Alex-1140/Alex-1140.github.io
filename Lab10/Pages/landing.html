@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рэми - Доставка бизнес-ланчей</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bg-custom-dark { background-color: #1b1612 !important; }
+        .bg-custom-gray { background-color: #262626 !important; }
+        .bg-custom-orange { background-color: #ed903b !important; }
+        .text-custom-dark { color: #1b1612 !important; }
+        .text-custom-orange { color: #ed903b !important; }
+        .btn-custom-orange { 
+            background-color: #ed903b !important; 
+            border-color: #ed903b !important;
+            color: #1b1612 !important;
+        }
+        .btn-custom-orange:hover {
+            background-color: #e08530 !important;
+            border-color: #e08530 !important;
+            color: white !important;
+        }
+        .border-custom-orange { border-color: #ed903b !important; }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-gray">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-custom-orange" href="#">Рэми</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#features">Преимущества</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#order">Заказать</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-custom-dark text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Вкусные бизнес-ланчи с доставкой</h1>
+                    <p class="lead">Свежие и полезные обеды прямо в ваш офис</p>
+                    <a href="#order" class="btn btn-custom-orange btn-lg">Заказать сейчас</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- О нас -->
+    <div id="about" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="text-custom-dark">О компании "Рэми"</h2>
+                <p class="text-custom-dark">"Рэми" был основан в 2010 году с целью предложить гостям не просто еду, а настоящие гастрономические приключения.</p>
+                <p class="text-custom-dark">Наши повара вдохновляются кухнями разных народов мира, создавая уникальные блюда. Мы используем только свежие, отборные продукты от местных производителей.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="../Images/FON.avif" 
+                     alt="Наша кухня" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+
+    <!-- Преимущества -->
+    <div id="features" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-custom-dark">Почему выбирают нас?</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="fs-1 text-custom-orange">🚚</div>
+                    <h4 class="text-custom-dark">Быстрая доставка</h4>
+                    <p class="text-custom-dark">Доставляем заказы в течение часа в любую точку города</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="fs-1 text-custom-orange">😋</div>
+                    <h4 class="text-custom-dark">Вкусная еда</h4>
+                    <p class="text-custom-dark">Профессиональные повара и только свежие продукты</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="fs-1 text-custom-orange">💰</div>
+                    <h4 class="text-custom-dark">Доступные цены</h4>
+                    <p class="text-custom-dark">Качественные бизнес-ланчи по разумным ценам</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Призыв к действию -->
+    <div id="order" class="bg-custom-orange py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4 text-custom-dark">Соберите свой идеальный ланч</h2>
+            <p class="lead mb-4 text-custom-dark">Выбирайте из разнообразных блюд и создавайте свой уникальный обед</p>
+            <a href="Pack_lunch.html" class="btn bg-custom-dark text-white btn-lg border-custom-orange">Собрать заказ</a>
+        </div>
+    </div>
+
+    <!-- Контакты -->
+    <div id="contact" class="container py-5">
+        <h2 class="text-center mb-5 text-custom-dark">Свяжитесь с нами</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h4 class="text-custom-dark">Контактная информация</h4>
+                <p class="text-custom-dark"><strong>Телефон:</strong> <a href="tel:+79782618195" class="text-custom-orange">+7 (978) 261-81-95</a></p>
+                <p class="text-custom-dark"><strong>Email:</strong> <a href="mailto:info@remi.ru" class="text-custom-orange">info@remi.ru</a></p>
+                <p class="text-custom-dark"><strong>Адрес:</strong> Москва, ул. Примерная, д. 123</p>
+                <p class="text-custom-dark"><strong>Время работы:</strong> Пн-Пт: 9:00-18:00</p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-custom-dark">Форма обратной связи</h4>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control border-custom-orange" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control border-custom-orange" placeholder="Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control border-custom-orange" rows="3" placeholder="Сообщение" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom-orange">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-custom-gray text-white py-4 text-center">
+        <div class="container">
+            <p>&copy; 2025 Рэми</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

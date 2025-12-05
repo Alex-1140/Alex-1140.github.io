@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Собрать ланч</title>
+        <link rel="stylesheet" href="../Styles/Pack_lunch.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400..700&family=Great+Vibes&family=Marmelad&family=Nothing+You+Could+Do&family=PT+Serif+Caption:ital@0;1&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Реми</h1>
+            <h2 id="part">Собрать ланч</h2>
+            <nav class="navigation">
+                <a href="main.html#Онас">О нас</a>
+                <a href="Pack_lunch.html">Собрать заказ</a>
+                <a href="#">Заказы</a>
+                <a href="#Контакты">Контакты</a>
+                <button id="loginBtn">Войти</button>
+            </nav>
+       </header>
+
+        <main>
+    <section class="combo-section">
+        <h2>Доступные для заказа комбо</h2>
+        <div class="combo-grid">
+        <div class="combo">
+            <div class="dishh">
+                <img src="../Images/soup.png" alt="Суп">
+                <p>Суп</p>
+            </div>
+
+            <div class="dishh">
+                <img src="../Images/main.png" alt="Главное блюдо">
+                <p>Главное блюдо</p>
+            </div>
+
+            <div class="dishh">
+                <img src="../Images/salat.png" alt="Салат">
+                <p>Салат</p>
+            </div>
+
+            <div class="dishh">
+                <img src="../Images/drink.png" alt="Напиток">
+                <p>Напиток</p>
+            </div>
+        </div>
+
+        <div class="combo">
+            <div class="dishh">
+                <img src="../Images/soup.png" alt="Суп">
+                <p>Суп</p>
+            </div>
+            
+            <div class="dishh">
+                <img src="../Images/main.png" alt="Главное блюдо">
+                <p>Главное блюдо</p>
+            </div>
+
+            <div class="dishh">
+                <img src="../Images/drink.png" alt="Напиток">
+                <p>Напиток</p>
+            </div>
+        </div>
+
+        <div class="combo">
+            <div class="dishh">
+                <img src="../Images/soup.png" alt="Суп">
+                <p>Суп</p>
+            </div>
+
+            <div class="dishh">
+                <img src="../Images/salat.png" alt="Салат">
+                <p>Салат</p>
+            </div>
+
+            <div class="dishh">
+                <img src="../Images/drink.png" alt="Напиток">
+                <p>Напиток</p>
+            </div>
+        </div>
+
+        <div class="combo">
+
+            <div class="dishh">
+                <img src="../Images/main.png" alt="Главное блюдо">
+                <p>Главное блюдо</p>
+            </div>
+
+            <div class="dishh">
+                <img src="../Images/salat.png" alt="Салат">
+                <p>Салат</p>
+            </div>
+
+            <div class="dishh">
+                <img src="../Images/drink.png" alt="Напиток">
+                <p>Напиток</p>
+            </div>
+        </div>
+
+        <div class="combo">
+            <div class="dishh">
+                <img src="../Images/main.png" alt="Главное блюдо">
+                <p>Главное блюдо</p>
+            </div>
+
+
+            <div class="dishh">
+                <img src="../Images/drink.png" alt="Напиток">
+                <p>Напиток</p>
+            </div>
+        </div>
+
+        <div class="combo">
+            <div class="dishh">
+                <img src="../Images/dessert.png" alt="Десерт">
+                <p class="dessert-note">(Можно добавить к любому заказу)</p>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+            <section id="soup">
+                <h2 class="type_dish">Супы</h2>
+                
+                <div class="filters" id="soup-filters">
+                    <button class="filter-btn" data-kind="fish">рыбный</button>
+                    <button class="filter-btn" data-kind="meat">мясной</button>
+                    <button class="filter-btn" data-kind="veg">вегетарианский</button>
+                </div>
+                <div class="dishes-container">       
+
+                </div>
+            </section>
+
+
+            <section id="main">
+                <h2 class="type_dish">Главные блюда</h2>
+                <div class="filters" id="main-filters">
+                    <button class="filter-btn" data-kind="fish">рыбное</button>
+                    <button class="filter-btn" data-kind="meat">мясное</button>
+                    <button class="filter-btn" data-kind="veg">вегетарианское</button>
+                </div>
+                <div class="dishes-container"></div>
+            </section>
+
+            <section id="salat">
+                <h2 class="type_dish">Салаты и стартеры</h2>
+                <div class="filters" id="starter-filters">
+                    <button class="filter-btn" data-kind="fish">рыбный</button>
+                    <button class="filter-btn" data-kind="meat">мясной</button>
+                    <button class="filter-btn" data-kind="veg">вегетарианский</button>
+                </div>
+                <div class="dishes-container"></div>
+            </section>
+
+
+            <section id="Drinks">
+                <h2 class="type_dish">Напитки</h2>
+                <div class="filters" id="drinks-filters">
+                    <button class="filter-btn" data-kind="hot">горячий</button>
+                    <button class="filter-btn" data-kind="cold">холодный</button>
+                </div>
+                <div class="dishes-container"></div>
+            </section>
+
+
+            <section id="dessert">
+                <h2 class="type_dish">Десерты</h2>
+                <div class="filters" id="dessert-filters">
+                    <button class="filter-btn" data-kind="small">маленькая порция</button>
+                    <button class="filter-btn" data-kind="medium">средняя порция</button>
+                    <button class="filter-btn" data-kind="large">большая порция</button>
+                </div>
+                <div class="dishes-container"></div>
+            </section>
+
+
+
+
+
+
+<div id="Form">
+    <h2 id="f">Сделать заказ</h2>
+<div id="Заказ">
+    <h3 id="left">Ваш заказ</h3>
+    <h3 id="right">Ваши данные</h3>
+
+    <form method="post" action=https://httpbin.org/post>
+<div class="left">
+<div id="order-summary">
+                <div class="order-category">
+                    <label style="font-weight: bold;">Суп</label>
+                    <div class="selected-dish" id="selected-soup" style="color: #666; font-style: italic;">Блюдо не выбрано</div>
+                </div>
+                
+                <div class="order-category">
+                    <label style="font-weight: bold;">Главное блюдо</label>
+                    <div class="selected-dish" id="selected-main" style="color: #666; font-style: italic;">Блюдо не выбрано</div>
+                </div>
+                
+                <div class="order-category">
+                    <label style="font-weight: bold;">Салат/стартер</label>
+                    <div class="selected-dish" id="selected-starter" style="color: #666; font-style: italic;">Блюдо не выбрано</div>
+                </div>
+                
+                <div class="order-category">
+                    <label style="font-weight: bold;">Напиток</label>
+                    <div class="selected-dish" id="selected-drink" style="color: #666; font-style: italic;">Напиток не выбран</div>
+                </div>
+                
+                <div class="order-category">
+                    <label style="font-weight: bold;">Десерт</label>
+                    <div class="selected-dish" id="selected-dessert" style="color: #666; font-style: italic;">Блюдо не выбрано</div>
+                </div>
+                
+                <div id="total-price">
+                    <strong style="font-size: 16px; color: #1b1612;">Стоимость заказа</strong>
+                    <div id="total-amount" style="font-size: 16px; color: #1b1612;">0Р</div>
+                </div>
+                
+                <div class="order-category">
+                    <label for="order-comment" style="font-weight: bold;">Комментарии к заказу</label>
+                    <textarea name="order-comment" style="width: 100%; height: 60px; margin-top: 5px; border: 1px solid #ccc; padding: 5px;"></textarea>
+                </div>
+                
+                <!-- Скрытые поля для передачи данных о заказе -->
+                <input type="hidden" name="soup-name" id="soup-name" class="dish">
+                <input type="hidden" name="soup-price" id="soup-price">
+                <input type="hidden" name="main-name" id="main-name" class="dish">
+                <input type="hidden" name="main-price" id="main-price">
+                <input type="hidden" name="starter-name" id="salat-name" class="dish">
+                <input type="hidden" name="starter-price" id="salat-price">
+                <input type="hidden" name="drink-name" id="drink-name" class="dish">
+                <input type="hidden" name="drink-price" id="drink-price">
+                <input type="hidden" name="dessert-name" id="dessert-name" class="dish">
+                <input type="hidden" name="dessert-price" id="dessert-price">
+                <input type="hidden" name="total-price" id="total-price-value">
+            </div>
+        </div>
+        
+        <div class="right">
+    <p>
+    <label for="name">Имя</label> <br>
+    <input name="name" id="name" type="text" class="second"><br>
+
+
+    <label for="mail">Email</label><br>
+    <input id="mail" type="email" name="mail" class="second"><br>
+
+    <input type="checkbox">Получать информацию о скидках и акциях <br>
+
+    <label for="tel">Номер телефона</label> <br>
+    <input id="tel" type="tel" name="tel" class="second"><br>
+
+
+    <label for="street">Адрес</label> <br>
+    <input id="street" type="text" name="street" class="second"><br>
+    <div class="ps">Доставка осуществляется только по Москве</div>
+
+<div id="times">
+    <label for="time">Время доставки</label> <br>
+    <input type="radio" name="time"  id="time" value="true"> К указаному времени <br>
+    <input type="radio" name="time"  id="time" value="false"> Как можно скорее <br>
+</div>
+    <label for="times">Укажите время доставки</label><br>
+    <input id="times" type="time" name="times"><br>
+
+    <div class="ps">Доступное время поставки с 7:00 до 23:00</div>
+    
+
+
+    <div id="buttom">
+        <input class="buttom" type="reset">
+        <input class="buttom" type="submit" value="Отправить"></div>
+        </p>
+    </div>
+        </form>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+
+
+<script src="../Scripts/displayDishes.js"></script>
+<script src="../Scripts/orderManager.js"></script>
+<script src="../Scripts/filterManager.js"></script>
+<script src="../Scripts/checkorder.js"></script>
+
+
+
+
+
+
+
+        <footer id="Контакты">
+                <p id="re">Контактные данные: <a href="tel:+79782618195"> +7 (978) 261-81-95 </a> </p>
+                <button id="feedbackk">Обратная связь</button>
+            </footer>
+            
+
+                
+<div id="loginModal" class="modal">
+            <div id="mod">
+                <span class="close">&times;</span>
+                <!-- Форма авторизации из sign in.html -->
+                <form action="https://httpbin.org/post" method="post" id="signin">
+                <h3>Авторизация</h3>
+                <p>
+                    <label for="username">Имя пользователя</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="password">Пароль</label><br>
+                    <input type="password" id="password" name="password"><br>
+                    <input type="checkbox"> Запомнить меня<br>
+                    <input type="submit" value="Вход">
+                </p>
+                </form>
+            </div>
+        </div>
+
+
+
+
+<div id="fb" class="modal">
+            <div id="mod">
+                <span class="close">&times;</span>
+        <form action=https://httpbin.org/post method="post" id="feedback">
+    <h3>Форма обратной связи</h3>
+                <label for="name">ФИО</label> <br>
+                <input type="text" name="name"> <br>
+                
+                <input type="hidden">
+
+                <label for="mail">Адрес электронной почты</label><br>
+                <input type="email" name="mail">  <br>
+
+
+                <label for="found out">Откуда узнали о нас</label> <br>
+                <section class="radio">
+                    <input type="radio" name="found out">От друзей <br>
+                    <input type="radio" name="found out">В интернете<br>
+                </section>
+                
+                <label for="type message">Тип обращения</label><br>
+                <select name="type message">
+                    <option disabled selected hidden> </option>
+                    <option value="complaint">Жалоба</option>
+                    <option value="assumption">Предложение</option>
+                </select> <br>
+
+                <label for="message">Текст обращения</label><br>
+<textarea name="message" rows="5" cols="40"></textarea><br>
+
+                <label for="file">Вложение</lable><br>
+                <input type="file" name="file"><br>
+
+                <input type="checkbox">Даю согласие на обработку персональных данных <br>
+
+
+                <input type="submit" value="Отправить"><br>
+
+        </form>
+</div>
+        </div>
+
+            <script>
+// Получаем модальное окно
+var modal = document.getElementById("loginModal");
+
+var span = document.getElementsByClassName("close")[0];
+// Получаем кнопку "Войти" по ID
+var btn = document.getElementById("loginBtn");
+
+// Когда пользователь нажимает на кнопку "Войти", открываем модальное окно
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+// Получаем элементы для обратной связи
+var fbModal = document.getElementById("fb");
+var fbClose = fbModal.querySelector(".close");
+var feedbackBtn = document.querySelector("footer button"); // Кнопка в футере
+
+// Когда пользователь нажимает на кнопку "Обратная связь", открываем модальное окно
+feedbackBtn.onclick = function() {
+    fbModal.style.display = "block";
+}
+
+// Когда пользователь нажимает на крестик, закрываем модальное окно
+fbClose.onclick = function() {
+    fbModal.style.display = "none";
+}
+
+</script>
+
+<div id="uved">
+        <p>У вас ничего не выбрано</p>
+        <button id="OK">Окей</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+img {
+    width:853px;
+    height:569px;
+    margin-left: 30px;
+
+}
+
+
+body {
+            margin: 0;
+    }
+
+h1{
+  font-size:50px;
+  font-weight: normal;
+  color:#1b1612;
+  text-align:center;
+
+}
+
+h2{
+    font-size:30px;
+    color:#1b1612;
+    margin-top: 20px;
+}
+
+.text{
+    font-size:16px;
+ 
+    width:70%;
+    margin: 5px;
+}
+
+
+table{
+    border-collapse: collapse;
+    text-align:center;
+    padding:3px ;
+    border: 3px solid #1b1612;
+    margin: 5px;
+    margin-bottom: 30px;
+}
+
+tr{
+    border-collapse: collapse;
+    text-align:center;
+    padding:3px ;
+    border: 3px solid #1b1612;
+}
+
+td{
+    border-collapse: collapse;
+    text-align:center;
+    padding:3px ;
+    border: 3px solid #1b1612;
+    
+    font-size:medium;
+    
+}
+
+th{
+    border-collapse: collapse;
+    text-align:center;
+    padding:5px ;
+    border: 3px solid #1b1612;
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box ;
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+footer{
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+.navigation a:visited{
+    color:#1b1612;
+}
+
+.navigation a:hover{
+    color:white;
+}
+
+.navigation a{
+    text-decoration: none;
+    font-family: Arial, serif;
+    font-size:20px;
+    margin:0 10px;
+    color:#1b1612;
+    background-color:#ed903b;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav{
+    margin:0px;
+    padding:0px;
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+
+
+a[href^="tel:"]{
+    color: white;
+} 
+
+main{
+    margin: 5px;
+    padding:5px;
+}
+
+
+header{
+    margin: 0;
+    padding:0;
+}
+
+
+.fd{
+    margin-top: 50px;
+}
+
+.fd{
+    margin-top: 20px;
+}
+
+main{
+    margin-left: 30px;
+
+}
+
+button{
+    cursor: pointer;
+    text-decoration: none;
+    font-size:20px;
+    margin:0 10px;
+    color:#1b1612;
+    background-color:#ed903b;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+}
+button:hover{
+    color:white;
+}
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+#mod{
+    display:flex;
+justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+}
+
+
+#signin {
+    background-color: #ed801d;
+    padding: 20px;
+    border-radius: 40px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    
+}
+
+#signin h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#signin label {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#signin input[type="text"],
+#signin input[type="password"] {
+    padding: 15px;
+    font-size: 16px;
+    width: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #8B4513;
+    margin-top: 7px;
+}
+
+#signin input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+#signin input[type="submit"] {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.close{
+    position: fixed;
+    top:0;
+    right: 0;
+    margin:50px;
+    background-color: aliceblue;
+    font-size: 30px;
+    font-weight: 787;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close:hover{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+#feedback{
+    background-color: #ed801d;
+    padding: 20px;
+    border-radius: 40px;
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+     
+}
+
+#feedback h3{
+    font-weight: 500;
+    font-size: 20px;
+    text-align:center;
+}
+
+#feedback label{
+    font-size: 18px;
+    margin-top: 7px;
+    
+}
+
+
+#feedback input[type="radio"]{
+    accent-color:black;
+    
+}
+
+
+#feedback select{
+    width: 150px;
+    margin-top: 8px;
+    border: 2px solid #8B4513;
+    border-radius: 10px;
+}
+
+#feedback input[type="text"], input[type="email"] {
+    width: 250px;
+    font-size: 18px;
+    border: 2px solid #8B4513;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#feedback input[type="file"]{
+
+    width: 250px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+#feedback textarea {
+    width: 250px;
+    height: 100px;
+    font-size: 16px;
+    border: 2px solid #8B4513;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    resize:none;
+    font-family: inherit;
+}
+
+
+#feedback input[type="checkbox"]{
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+
+
+#feedback input[type="submit"] {
+    padding: 12px 30px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+}
+
+
+nav a:active {
+    color: white;
+}
+
+
+
+@media (max-width: 800px) {
+    /* Навигационное меню - выравнивание с равными промежутками */
+    .navigation {
+        justify-content: space-between;
+    }
+    
+    /* Главный заголовок - выравнивание по центру */
+    h1 {
+        text-align: center;
+    }
+    
+    /* Изображение в блоке «О нас» */
+    #Онас img {
+        width: 500px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+
+
+/* Для ширины экрана ≤600px */
+@media (max-width: 600px) {
+    /* Навигационное меню - вертикальное направление */
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    /* Увеличение шрифта для ссылок на 4px */
+    .navigation a {
+        font-size: 24px;
+    }
+    
+    /* Главный заголовок - выравнивание по центру */
+    h1 {
+        text-align: center;
+    }
+    
+    /* Изображение в блоке «О нас» - ширина 100% */
+    #Онас img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+    
+    /* Уменьшение шрифта таблицы на 2px */
+    table {
+        font-size: calc(100% - 2px);
+    }
+    
+    th, td {
+        font-size: calc(100% - 2px);
+        padding: 3px;
+    }
+}
+
+/* Для ширины экрана ≤400px */
+@media (max-width: 400px) {
+    /* Дополнительное уменьшение шрифта таблицы еще на 2px */
+    table {
+        font-size: calc(100% - 4px);
+    }
+    
+    th, td {
+        font-size: calc(100% - 4px);
+        padding: 2px;
+    }
+    
+    /* Адаптация таблицы для маленьких экранов */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    /* Уменьшение отступов */
+    main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .text {
+        width: 100%;
+    }
+    
+    /* Адаптация модальных окон */
+    #signin, #feedback {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    #signin input[type="text"],
+    #signin input[type="password"],
+    #feedback input[type="text"],
+    #feedback input[type="email"] {
+        width: 100%;
+    }
+}

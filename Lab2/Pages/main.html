@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Рэми</title>
+        <meta name="description" content="Заказ еды в офис и на дом по Москве. Закажите доставку онлайн или ☎ +7 (978) 261-81-95.">
+        <meta name="keywords" content="Доставка Еда Быстро Дешево ">
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Styles/main.css">
+    </head>
+    <body>
+       <header>
+        
+
+            <h1>Реми</h1>
+            <nav class="navigation">
+                <a href="#Онас">О нас</a>
+                <a href="Pack_lunch.html">Собрать заказ</a>
+                <a href="#">Заказы</a>
+                <a href="#Контакты">Контакты</a>
+                <button id="loginBtn">Войти</button>
+            </nav>
+       </header>
+       <main>
+        <section id="Онас">
+            <h2 class="fd">О нас</h2>
+            <img src="../Images/lunch.jpg"  alt="">
+            <p class="text"> "Рэми" был основан в 2010 году с целью предложить гостям не просто еду, а настоящие гастрономические приключения. 
+                Наши повара вдохновляются кухнями разных народов мира, создавая уникальные блюда, которые рассказывают свою собственную вкусную историю. Мы используем только свежие, 
+                отборные продукты от местных производителей, чтобы гарантировать высочайшее качество каждого блюда. </p>
+        </section>
+        <section>
+            <h2>Почемы именно мы?</h2>
+            <ul class="text">
+                <li>Быстрая доставка</li>
+                <li>Вкусная еда</li>
+                <li>Доступные цены</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Топ блюд</h2>
+            <table>
+                <tr> <th>Номер</th> <th>Название</th> <th>Количество заказов</th> <th>Цена</th> </tr>
+                <tr> <td>1</td> <td>Лагман</td> <td>1243</td> <td>250</td> </tr>
+                <tr> <td>2</td> <td>Картофель по-деревенки с мясом </td> <td>123</td> <td>150</td> </tr>
+                <tr> <td>3</td> <td>Пельмени </td> <td>123</td> <td>300</td> </tr>
+                <tr> <td>4</td> <td>Борщ</td> <td>123</td> <td>150</td> </tr>
+                <tr> <td>5</td> <td>Солянка </td> <td>123</td> <td>300</td> </tr>
+            </table>
+        </section>
+        
+        </main>
+
+
+        <footer id="Контакты">
+            <p id="re">Контактные данные: <a href="tel:+79782618195"> +7 (978) 261-81-95 </a> </p>
+            <button>Обратная связь</button>
+        </footer>
+
+
+        <!--Аутентификации-->
+        <div id="loginModal" class="modal">
+            <div id="mod">
+                <span class="close">&times;</span>
+                <form action="https://httpbin.org/post" method="post" id="signin">
+                <h3>Авторизация</h3>
+                <p>
+                    <label for="username">Имя пользователя</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="password">Пароль</label><br>
+                    <input type="password" id="password" name="password"><br>
+                    <input type="checkbox"> Запомнить меня<br>
+                    <input type="submit" value="Вход">
+                </p>
+                </form>
+            </div>
+        </div>
+
+
+
+<!--Форма обратной связи-->
+<div id="fb" class="modal">
+            <div id="mod">
+                <span class="close">&times;</span>
+        <form action=https://httpbin.org/post method="post" id="feedback">
+    <h3>Форма обратной связи</h3>
+                <label for="name">ФИО</label> <br>
+                <input type="text" name="name"> <br>
+                
+                <input type="hidden">
+
+                <label for="mail">Адрес электронной почты</label><br>
+                <input type="email" name="mail">  <br>
+
+
+                <label for="found out">Откуда узнали о нас</label> <br>
+                <section class="radio">
+                    <input type="radio" name="found out">От друзей <br>
+                    <input type="radio" name="found out">В интернете<br>
+                </section>
+                
+                <label for="type message">Тип обращения</label><br>
+                <select name="type message">
+                    <option disabled selected hidden> </option>
+                    <option value="complaint">Жалоба</option>
+                    <option value="assumption">Предложение</option>
+                </select> <br>
+
+                <label for="message">Текст обращения</label><br>
+<textarea name="message" rows="5" cols="40"></textarea><br>
+
+                <label for="file">Вложение</lable><br>
+                <input type="file" name="file"><br>
+
+                <input type="checkbox">Даю согласие на обработку персональных данных <br>
+
+
+                <input type="submit" value="Отправить"><br>
+
+        </form>
+</div>
+        </div>
+
+
+
+
+
+<script>
+var modal = document.getElementById("loginModal");
+
+var span = document.getElementsByClassName("close")[0];
+
+var btn = document.getElementById("loginBtn");
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+var fbModal = document.getElementById("fb");
+var fbClose = fbModal.querySelector(".close");
+var feedbackBtn = document.querySelector("footer button");
+
+
+feedbackBtn.onclick = function() {
+    fbModal.style.display = "block";
+}
+
+
+fbClose.onclick = function() {
+    fbModal.style.display = "none";
+}
+
+</script>
+
+        </body>
+
+</html>
